@@ -1,0 +1,19 @@
+The software project is presented with:
+1. Presentation – 15-20 slides.
+2. Text file and
+3. Code with comments on the development (configuration of REPO in GitHub with source codes).
+Instructions for item
+1. Presentation
+The presentation contains an illustration of the main components from the text file. Instructions for item
+2. Text file
+The text file contains a title page with the assignment and the student's name. Contents of the text document:
+1. General information about the project with a focus on its significance on a global and national scale.
+2. Description of the data set used, if applicable.
+2A. Description of characteristics 
+2B. Statistical analysis of characteristics – visualization, correlation matrix (heat map), etc.  2C. Preprocessing of the dataset – noise, missing data, dimensionality reduction, etc.
+3. Technological framework – programming environment, programming language, libraries, etc.
+4. Description of the algorithms you are creating or using for the development.
+5. Synthesis of training and analysis models.
+6. Configuring REPO in GitHub with source codes.
+7. Experimental results – screenshots, comparative diagrams, etc.
+8. Information resources.

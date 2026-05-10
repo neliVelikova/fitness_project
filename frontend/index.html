@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Fitness Analytics Dashboard</h1>
+
+    <!-- INPUT SECTION -->
+    <div class="card">
+        <h3>Daily Health Assessment</h3>
+
+        <input id="steps" type="number" min="0" placeholder="Steps Today" required>
+
+        <input id="sleep" type="number" min="0" max="24" placeholder="Sleep Hours" required>
+
+        <input id="energy" type="number" min="1" max="10" placeholder="Energy Level (1-10)" required>
+
+        <input id="weight" type="number" placeholder="Weight (kg)">
+
+        <input id="age" type="number" placeholder="Age">
+
+        <select id="workout" required>
+            <option value="" disabled selected>
+                Select Workout Type
+            </option>
+            <option value="0">No Workout</option>
+            <option value="1">Moderate Workout</option>
+            <option value="2">Intensive Workout</option>
+        </select>
+
+        <button onclick="predict()">Analyze My Health</button>
+
+        <h2 id="result"></h2>
+        <div id="recommendations"></div>
+        
+    </div>
+
+    <!-- CHART SECTION -->
+    <div id="dashboard" style="display:none;">
+
+        <div class="card">
+        <h3>Daily Steps</h3>
+        <canvas id="chart1"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Sleep Quality</h3>
+            <canvas id="sleepProgress"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Wellness Score</h3>
+            <canvas id="scoreChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Health Insights</h3>
+            <p id="insightText"></p>
+        </div>
+    </div>
+    
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
